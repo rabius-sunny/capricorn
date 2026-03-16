@@ -1,0 +1,163 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+}
+
+// ─── Content Models ───────────────────────────────────────
+
+model HeroContent {
+  id           String   @id @default(auto()) @map("_id") @db.ObjectId
+  eyebrow      String
+  headline     String
+  subheadline  String
+  primaryCTA   Json
+  secondaryCTA Json
+  heroImage    String
+  heroImageAlt String
+  updatedAt    DateTime @updatedAt
+}
+
+model Service {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  order       Int
+  icon        String
+  title       String
+  description String
+  href        String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model GalleryImage {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  src       String
+  alt       String
+  room      String
+  order     Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Testimonial {
+  id           String   @id @default(auto()) @map("_id") @db.ObjectId
+  quote        String
+  name         String
+  relationship String
+  rating       Int
+  visible      Boolean  @default(true)
+  imageUrl     String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model RNPackage {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  tier      String
+  price     Int
+  tagline   String
+  features  String[]
+  featured  Boolean  @default(false)
+  updatedAt DateTime @updatedAt
+}
+
+model FAQItem {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  order     Int
+  question  String
+  answer    String
+  visible   Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model TeamMember {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  order     Int
+  name      String
+  title     String
+  bio       String?
+  photoUrl  String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model ContactInfo {
+  id           String   @id @default(auto()) @map("_id") @db.ObjectId
+  companyName  String
+  email        String
+  website      String
+  phones       Json
+  address      String?
+  serviceAreas String[]
+  updatedAt    DateTime @updatedAt
+}
+
+// ─── Form Submission Models ───────────────────────────────
+
+model TourRequest {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  fullName      String
+  phone         String
+  email         String
+  residentName  String
+  relationship  String
+  careNeeds     String
+  preferredDate String
+  preferredTime String
+  message       String?
+  status        String   @default("new")
+  createdAt     DateTime @default(now())
+}
+
+model ConsultationRequest {
+  id               String   @id @default(auto()) @map("_id") @db.ObjectId
+  fullName         String
+  phone            String
+  email            String
+  consultationType String
+  residentAge      String
+  careNeeds        String
+  preferredDate    String
+  message          String?
+  status           String   @default("new")
+  createdAt        DateTime @default(now())
+}
+
+model ReferralSubmission {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  referrerName  String
+  organization  String
+  phone         String
+  email         String
+  residentNeeds String
+  timeline      String
+  notes         String?
+  status        String   @default("new")
+  createdAt     DateTime @default(now())
+}
+
+model CareersApplication {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  fullName  String
+  phone     String
+  email     String
+  position  String
+  resumeUrl String
+  coverNote String?
+  status    String   @default("new")
+  createdAt DateTime @default(now())
+}
+
+model ContactSubmission {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  fullName  String
+  phone     String
+  email     String
+  reason    String
+  message   String
+  status    String   @default("new")
+  createdAt DateTime @default(now())
+}

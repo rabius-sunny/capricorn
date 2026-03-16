@@ -1,0 +1,36 @@
+'use server';
+
+import { revalidatePath } from 'next/cache';
+import { TeamMemberSchema, type TeamMemberInput } from '@/lib/validations';
+import type { ActionResult } from '@/types';
+// import { prisma } from '@/lib/prisma';
+
+export async function updateTeamMember(
+  data: TeamMemberInput,
+  id?: string
+): Promise<ActionResult> {
+  const parsed = TeamMemberSchema.safeParse(data);
+  if (!parsed.success)
+    return { success: false, errors: parsed.error.flatten() };
+
+  try {
+    if (id) {
+      // TODO: Persist to MongoDB via Prisma
+      // await prisma.teamMember.update({ where: { id }, data: parsed.data })
+      console.log('[DEV] updateTeamMember (update):', id, parsed.data);
+    } else {
+      // TODO: Persist to MongoDB via Prisma
+      // await prisma.teamMember.create({ data: parsed.data })
+      console.log('[DEV] updateTeamMember (create):', parsed.data);
+    }
+    revalidatePath('/about');
+    revalidatePath('/admin/team');
+    return { success: true };
+  } catch (error) {
+    console.error('[Action Error]', error);
+    return {
+      success: false,
+      errors: { formErrors: ['Failed to save.'], fieldErrors: {} }
+    };
+  }
+}

@@ -89,7 +89,77 @@ export interface WhyChooseUsFeature {
   image: string;
 }
 
-// Form submission types
+// ─── Submission Status ────────────────────────────────────
+
+export type SubmissionStatus = 'new' | 'reviewed';
+
+export interface TourRequest {
+  id: string;
+  fullName: string;
+  phone: string;
+  email: string;
+  residentName: string;
+  relationship: string;
+  careNeeds: string;
+  preferredDate: string;
+  preferredTime: string;
+  message?: string | null;
+  status: string;
+  createdAt: Date | string;
+}
+
+export interface ConsultationRequest {
+  id: string;
+  fullName: string;
+  phone: string;
+  email: string;
+  consultationType: string;
+  residentAge: string;
+  careNeeds: string;
+  preferredDate: string;
+  message?: string | null;
+  status: string;
+  createdAt: Date | string;
+}
+
+export interface ReferralSubmission {
+  id: string;
+  referrerName: string;
+  organization: string;
+  phone: string;
+  email: string;
+  residentNeeds: string;
+  timeline: string;
+  notes?: string | null;
+  status: string;
+  createdAt: Date | string;
+}
+
+export interface CareersApplication {
+  id: string;
+  fullName: string;
+  phone: string;
+  email: string;
+  position: string;
+  resumeUrl: string;
+  coverNote?: string | null;
+  status: string;
+  createdAt: Date | string;
+}
+
+export interface ContactSubmission {
+  id: string;
+  fullName: string;
+  phone: string;
+  email: string;
+  reason: string;
+  message: string;
+  status: string;
+  createdAt: Date | string;
+}
+
+// ─── Form submission input types (client-side) ───────────
+
 export interface TourRequestData {
   fullName: string;
   phone: string;
@@ -140,7 +210,28 @@ export interface ContactFormData {
   message: string;
 }
 
-// Server Action return type
+// ─── Admin types ─────────────────────────────────────────
+
+export interface AdminSession {
+  email: string;
+}
+
+export type SubmissionType =
+  | 'tours'
+  | 'consultations'
+  | 'referrals'
+  | 'careers'
+  | 'contacts';
+
+export interface DashboardCount {
+  tours: number;
+  consultations: number;
+  referrals: number;
+  careers: number;
+}
+
+// ─── Server Action return type ───────────────────────────
+
 export interface ActionResult {
   success: boolean;
   errors?: {

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
+import { headers } from 'next/headers';
 import { Toaster } from '@/components/ui/sonner';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
@@ -30,26 +31,36 @@ export const metadata: Metadata = {
   ]
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children
 }: {
   children: React.ReactNode;
 }) {
+  const headersList = await headers();
+  const pathname = headersList.get('x-pathname') ?? '';
+  const isAdmin = pathname.startsWith('/admin');
+
   return (
     <html
       lang='en'
       className={poppins.variable}
     >
       <body>
-        <a
-          href='#main-content'
-          className='sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-teal focus:px-4 focus:py-2 focus:text-white focus:shadow-elevated'
-        >
-          Skip to content
-        </a>
-        <Header />
-        <main id='main-content'>{children}</main>
-        <Footer />
+        {!isAdmin && (
+          <a
+            href='#main-content'
+            className='sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-teal focus:px-4 focus:py-2 focus:text-white focus:shadow-elevated'
+          >
+            Skip to content
+          </a>
+        )}
+        {!isAdmin && <Header />}
+        {isAdmin ? (
+          children
+        ) : (
+          <main id='main-content'>{children}</main>
+        )}
+        {!isAdmin && <Footer />}
         <Toaster
           richColors
           position='top-right'
