@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "quote": "The team at Capricorn Group Care treated my mother with such warmth and genuine kindness. We finally felt at peace knowing she was in loving hands. The care they provide goes far beyond what we expected.",
+    "name": "Linda R.",
+    "relationship": "Daughter of Resident",
+    "rating": 5,
+    "visible": true
+  },
+  {
+    "id": "2",
+    "quote": "I've referred multiple patients here from the hospital. The environment truly feels like home — not a facility. Families consistently tell me their loved ones are thriving here.",
+    "name": "Marcus T.",
+    "relationship": "Hospital Case Manager",
+    "rating": 5,
+    "visible": true
+  },
+  {
+    "id": "3",
+    "quote": "The RN consultation service gave our family a clear, comprehensive care plan and real peace of mind. Having an expert walk us through every step made an overwhelming process feel manageable.",
+    "name": "Sandra W.",
+    "relationship": "Family Member",
+    "rating": 5,
+    "visible": true
+  }
+]

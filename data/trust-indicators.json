@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "icon": "Home",
+    "label": "Home-Like Environment",
+    "description": "Warm and residential, not clinical."
+  },
+  {
+    "id": "2",
+    "icon": "Stethoscope",
+    "label": "RN Care Planning",
+    "description": "Backed by registered nurse expertise."
+  },
+  {
+    "id": "3",
+    "icon": "ShieldCheck",
+    "label": "Safe & Accessible",
+    "description": "Wide paths, accessible bathrooms, safety features."
+  },
+  {
+    "id": "4",
+    "icon": "HeartHandshake",
+    "label": "Family-Centered",
+    "description": "Families kept informed and involved."
+  }
+]

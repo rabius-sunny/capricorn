@@ -1,0 +1,46 @@
+[
+  {
+    "id": "1",
+    "tier": "Starter",
+    "price": 350,
+    "featured": false,
+    "tagline": "For families getting started",
+    "features": [
+      "Initial RN assessment",
+      "Basic care plan development",
+      "Monthly review session",
+      "Written care summary"
+    ]
+  },
+  {
+    "id": "2",
+    "tier": "Essential",
+    "price": 750,
+    "featured": true,
+    "tagline": "Most popular choice",
+    "features": [
+      "Detailed RN assessment",
+      "Personalized care plan",
+      "Bi-weekly review sessions",
+      "Family consultation call",
+      "Medication review",
+      "Provider coordination"
+    ]
+  },
+  {
+    "id": "3",
+    "tier": "Comprehensive",
+    "price": 1500,
+    "featured": false,
+    "tagline": "Full-service planning & support",
+    "features": [
+      "Full RN assessment",
+      "Advanced care plan",
+      "Weekly consultation support",
+      "Compliance guidance",
+      "Priority response",
+      "Ongoing monitoring",
+      "Family progress reports"
+    ]
+  }
+]

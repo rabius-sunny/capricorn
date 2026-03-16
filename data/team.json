@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "order": 1,
+    "name": "Brenda Johnson",
+    "title": "Registered Nurse, Director of Care",
+    "bio": "With over 15 years of experience in senior and residential care nursing, Brenda leads our care planning and ensures every resident receives the highest standard of personalized support.",
+    "photoUrl": "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=400&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": "2",
+    "order": 2,
+    "name": "Precious Okafor",
+    "title": "Registered Nurse, Care Coordinator",
+    "bio": "Precious brings deep compassion and clinical expertise to every resident interaction. She specializes in care transitions, medication management, and family communication.",
+    "photoUrl": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=400&h=400&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": "3",
+    "order": 3,
+    "name": "Angela Martinez",
+    "title": "Lead Caregiver",
+    "bio": "Angela has dedicated her career to providing warm, attentive daily care. Residents and families alike know her for her patient and joyful presence in the home.",
+    "photoUrl": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=400&h=400&auto=format&fit=crop&q=80"
+  }
+]

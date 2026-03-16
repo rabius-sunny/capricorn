@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "order": 1,
+    "icon": "Home",
+    "title": "Residential Group Home Care",
+    "description": "A safe, home-like environment with personalized support for daily living. Our licensed residential homes offer the warmth of a family setting with professional care.",
+    "href": "/services"
+  },
+  {
+    "id": "2",
+    "order": 2,
+    "icon": "HeartHandshake",
+    "title": "Daily Living Assistance",
+    "description": "Support with dressing, bathing, grooming, and daily routines. Our caregivers provide compassionate hands-on assistance that preserves resident dignity and independence.",
+    "href": "/services"
+  },
+  {
+    "id": "3",
+    "order": 3,
+    "icon": "Pill",
+    "title": "Medication Coordination",
+    "description": "Structured medication management to ensure correct and timely care. We work with healthcare providers to maintain accurate medication schedules and monitor for changes.",
+    "href": "/services"
+  },
+  {
+    "id": "4",
+    "order": 4,
+    "icon": "Users",
+    "title": "Companion Care",
+    "description": "Meaningful engagement and companionship for emotional well-being. Our caregivers build genuine relationships with residents through conversation, activities, and shared experiences.",
+    "href": "/services"
+  },
+  {
+    "id": "5",
+    "order": 5,
+    "icon": "Accessibility",
+    "title": "Mobility & Safety Support",
+    "description": "Wide hallways, accessible bathrooms, and uncluttered layouts designed for safety. We proactively reduce fall risks and support residents in moving safely throughout the home.",
+    "href": "/services"
+  },
+  {
+    "id": "6",
+    "order": 6,
+    "icon": "Stethoscope",
+    "title": "RN Care Plan Consultation",
+    "description": "RN-backed care planning for families and residential providers. Our registered nurses assess needs, develop individualized plans, and provide ongoing guidance and oversight.",
+    "href": "/rn-consultation"
+  }
+]

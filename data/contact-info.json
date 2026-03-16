@@ -1,0 +1,18 @@
+{
+  "companyName": "Capricorn Group Care LLC",
+  "email": "Admin@Capricornghs.com",
+  "website": "www.Capricornghs.com",
+  "phones": [
+    { "name": "Brenda (RN)", "number": "469-667-2018" },
+    { "name": "Precious (RN)", "number": "479-334-9933" }
+  ],
+  "address": "",
+  "serviceAreas": [
+    "McKinney",
+    "Dallas",
+    "Plano",
+    "Frisco",
+    "Collin County",
+    "Texas"
+  ]
+}

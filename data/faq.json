@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1",
+    "order": 1,
+    "question": "What is a residential group home?",
+    "answer": "A residential group home is a small, home-like setting where adults receive personalized care and daily living assistance. Unlike traditional nursing facilities, group homes offer a warm, family-style environment with a limited number of residents, allowing for individualized attention and genuine relationships with caregivers.",
+    "visible": true
+  },
+  {
+    "id": "2",
+    "order": 2,
+    "question": "Who is a good candidate for residential group care?",
+    "answer": "Residential group care is ideal for seniors and adults who need assistance with activities of daily living such as dressing, bathing, grooming, or medication management — but who also thrive in a home environment. It is especially well-suited for individuals who prefer a smaller, more personal setting over a large institutional facility.",
+    "visible": true
+  },
+  {
+    "id": "3",
+    "order": 3,
+    "question": "How do I schedule a tour?",
+    "answer": "You can schedule a tour by completing the Schedule a Tour form on our website. Alternatively, you are welcome to call our care team directly at any of the numbers listed on our Contact page. We encourage families to visit in person so you can experience the home, meet our team, and ask any questions.",
+    "visible": true
+  },
+  {
+    "id": "4",
+    "order": 4,
+    "question": "What services are included in daily care?",
+    "answer": "Our daily care services include assistance with personal hygiene (bathing, dressing, grooming), medication coordination, meal preparation, mobility support, companionship, and light housekeeping within the resident's personal space. We tailor the level of assistance to each resident's individual needs and care plan.",
+    "visible": true
+  },
+  {
+    "id": "5",
+    "order": 5,
+    "question": "Are the homes designed for mobility and safety?",
+    "answer": "Yes. Our homes are thoughtfully designed with wide hallways, accessible bathrooms with safety bars, step-free entries where possible, uncluttered layouts, and good lighting throughout. We conduct regular safety reviews and work with residents and families to continuously improve the living environment.",
+    "visible": true
+  },
+  {
+    "id": "6",
+    "order": 6,
+    "question": "Do you provide RN care planning services?",
+    "answer": "Yes. We offer three tiers of RN Care Plan Consultation services: Starter, Essential, and Comprehensive. These services are available both to families whose loved ones live in our homes and to outside families and residential care providers who need professional RN-backed care planning support.",
+    "visible": true
+  },
+  {
+    "id": "7",
+    "order": 7,
+    "question": "Can hospitals or case managers refer residents?",
+    "answer": "Absolutely. We work closely with hospitals, discharge planners, and case managers to facilitate smooth transitions from hospital to residential care. If you are a healthcare professional looking to refer a patient, please visit our Referral Partners page or contact us directly to discuss the resident's needs and our availability.",
+    "visible": true
+  },
+  {
+    "id": "8",
+    "order": 8,
+    "question": "How quickly can someone move in?",
+    "answer": "Move-in timelines depend on care needs, required documentation, and availability in our home. We work as efficiently as possible to minimize waiting time, especially in urgent discharge situations. Please contact us directly to discuss your specific timeline and we will do our best to accommodate your needs.",
+    "visible": true
+  }
+]

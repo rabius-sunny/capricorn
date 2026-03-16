@@ -1,9 +1,45 @@
-@import "tailwindcss";
-@import "tw-animate-css";
-@import "shadcn/tailwind.css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
 
 @custom-variant dark (&:is(.dark *));
 
+/* ─────────────────────────────────────────────────────────
+   Brand Design Tokens — Capricorn Group Care LLC
+   ─────────────────────────────────────────────────────────*/
+@theme {
+  /* Fonts (vars injected by next/font/google in layout.tsx) */
+  --font-heading: var(--font-poppins);
+  --font-body: var(--font-poppins);
+  --font-label: var(--font-poppins);
+
+  /* Teal Brand Color */
+  --color-teal: #2a9d8f;
+  --color-teal-light: #4fbdae;
+  --color-teal-dark: #1a7a6e;
+
+  /* Supporting Brand Colors */
+  --color-brand-blue: #3a86cc;
+  --color-brand-purple: #7b5ea7;
+  --color-brand-gold: #d4a843;
+
+  /* Surface Tones */
+  --color-surface-soft: #f4f6f8;
+  --color-surface-muted: #eef2f6;
+
+  /* Text Scale */
+  --color-text-dark: #1e2a35;
+  --color-text-mid: #4a5568;
+  --color-text-light: #718096;
+
+  /* Shadows */
+  --shadow-card: 0 4px 24px rgba(42, 157, 143, 0.08);
+  --shadow-elevated: 0 8px 40px rgba(42, 157, 143, 0.14);
+}
+
+/* ─────────────────────────────────────────────────────────
+   shadcn/ui Token Mapping
+   ─────────────────────────────────────────────────────────*/
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -47,6 +83,9 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
+/* ─────────────────────────────────────────────────────────
+   shadcn/ui CSS Variables (Light Mode)
+   ─────────────────────────────────────────────────────────*/
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -82,6 +121,9 @@
   --sidebar-ring: oklch(0.708 0 0);
 }
 
+/* ─────────────────────────────────────────────────────────
+   shadcn/ui CSS Variables (Dark Mode — unused in this project)
+   ─────────────────────────────────────────────────────────*/
 .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
@@ -101,11 +143,6 @@
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.809 0.105 251.813);
-  --chart-2: oklch(0.623 0.214 259.815);
-  --chart-3: oklch(0.546 0.245 262.881);
-  --chart-4: oklch(0.488 0.243 264.376);
-  --chart-5: oklch(0.424 0.199 265.638);
   --sidebar: oklch(0.205 0 0);
   --sidebar-foreground: oklch(0.985 0 0);
   --sidebar-primary: oklch(0.488 0.243 264.376);
@@ -116,14 +153,24 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+/* ─────────────────────────────────────────────────────────
+   Base Styles
+   ─────────────────────────────────────────────────────────*/
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+  html {
+    @apply font-body antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
   body {
     @apply bg-background text-foreground;
   }
-  html {
-    @apply font-sans;
+  h1,
+  h2 {
+    @apply font-heading;
   }
 }
